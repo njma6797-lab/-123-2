@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>⭐ نجم – هكر أخلاقي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>⭐ نجم – هكر أخلاقي</h1>
+  <p>منصة تعليمية للأمن السيبراني وتحليل الموقع بشكل أخلاقي</p>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>📍 تحديد موقعك (بموافقتك)</h2>
+    <button id="locBtn">تحديد الموقع</button>
+    <div class="info">
+      <span>LAT: <b id="lat">--</b></span>
+      <span>LON: <b id="lon">--</b></span>
+      <span>ACCURACY: <b id="acc">--</b> m</span>
+    </div>
+    <div id="map"></div>
+  </section>
+
+  <section class="card">
+    <h2>🌐 تحليل IP (تقريبي)</h2>
+    <button id="ipBtn">تحليل</button>
+    <div class="info">
+      <span>IP: <b id="ip">--</b></span>
+      <span>الدولة: <b id="country">--</b></span>
+      <span>المدينة: <b id="city">--</b></span>
+      <span>الشبكة: <b id="isp">--</b></span>
+    </div>
+  </section>
+
+  <section class="card terminal">
+    <h2>💻 واجهة محاكاة هاكر</h2>
+    <div id="terminal"></div>
+    <input id="cmd" placeholder="اكتب أمر (محاكاة فقط)" />
+  </section>
+
+</main>
+
+<footer>
+  تعليمي • أخلاقي • لا يتم حفظ أي بيانات
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
